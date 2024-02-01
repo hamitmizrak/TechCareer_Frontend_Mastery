@@ -1,0 +1,22 @@
+# Special Files (Techcareer)
+
+# NPM
+/node_modules
+
+# Derleme ciktisi
+*.class 
+
+# Derleme Dizini 
+bin/
+target/
+
+# Ide'ye ÖZgü 
+.idea/
+.vscode/
+
+# Geçici Dosyaları Yoksay
+*.tmp
+
+# Log Dosyaları Yoksay 
+*.log 
+
