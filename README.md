@@ -2,6 +2,10 @@
 
 [GitHub](https://github.com/hamitmizrak/TechCareer_Frontend_Mastery)
 
+[Emmet](https://docs.emmet.io/cheat-sheet/)
+[Codepen](https://codepen.io/pen/)
+[JsFiddle](https://jsfiddle.net/)
+
 ### Proje Tanımı
 ### Proje Talimatlar
 ### Proje Klavuz
