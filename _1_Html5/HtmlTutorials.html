@@ -50,6 +50,103 @@
   <!-- Main Start Codes -->
   <main id="main_id">
 
+
+    <!-- FORM+TABLE -->
+    <table border="1" width="100%">
+      <tbody>
+        <tr>
+          <td><label for="uname">Adınız</label></td>
+          <td> <input type="text" id="uname" title="Adınız" placeholder="Adınız ..." required autofocus>
+        </td>
+        </tr>
+
+        <tr>
+          <td><label for="uemail">Emailiniz</label></td>
+          <td> 
+            <input type="email" id="uemail" title="Emaliniz" placeholder="Emaliniz ..." required>
+        </td>
+        </tr>
+
+        <tr>
+          <td><label for="upassword">Şifreniz</label></td>
+          <td> 
+            <input type="password" id="upassword" title="Şifreniz" placeholder="Şifreniz ..." required>
+        </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td> 
+            <input type="reset" value="Temizle">
+            <button type="submit">Gönder-2</button>
+          </td>
+       
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">&copy; Bütün Haklar Saklıdır</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <!-- TABLE -->
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>ADI</th>
+          <th>EMAIL</th>
+          <th>PASSWORD</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Adı-1</td>
+          <td>Soyadı-1</td>
+          <td>Şifre-1</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Adı-1</td>
+          <td>Soyadı-1</td>
+          <td>Şifre-1</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">&copy; Bütün Haklar Saklıdır</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <hr>
+    <hr>
+
+    <!-- FORM -->
+    <form action="#!" method="get" autocomplete="on" target="_blank">
+      <label for="uname">Adınız</label>
+      <input type="text" id="uname" title="Adınız" placeholder="Adınız ..." required autofocus> <br/>
+
+      <label for="uemail">Emailiniz</label>
+      <input type="email" id="uemail" title="Emaliniz" placeholder="Emaliniz ..." required><br/>
+
+      <label for="upassword">Şifreniz</label>
+      <input type="password" id="upassword" title="Şifreniz" placeholder="Şifreniz ..." required><br/>
+      <input type="reset" value="Temizle">
+      <input type="submit" value="Gönder-1">
+      <button type="submit">Gönder-2</button>
+    </form>
+
+
+    <br>
+    <hr>
     <!-- DataList -->
     <input type="text" list="frontend" name="techcareer">
     <datalist id="frontend">
@@ -60,7 +157,7 @@
       <option value="Js">
       <option value="Jquery">
       <option value="React">
-   </datalist>
+    </datalist>
 
     <!-- Tanımlı Listeler -->
     <dl>
