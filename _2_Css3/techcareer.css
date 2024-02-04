@@ -251,3 +251,43 @@ input[type="text"]{
      background-color: white;
 }
 */
+
+/*Flex Box*/
+.flex_container{
+    /* Flex özelliği verdik */
+    display: flex;
+
+    /* yatay düzlem(X)*/
+    justify-content: space-around;
+
+    /* Dikey düzlem(Y) */
+    align-items: center;
+
+    /* Satır olması  */
+    flex-direction: row;
+
+    /* Container eğer sığmaz büyük gelirse bir sonraki satıra geçsin*/
+    flex-wrap: wrap;
+
+    /* Satırlar arasında eşit boşluklar bıraksın ve dikey olarak sıralasın*/
+    align-content: space-around;
+}
+
+.flex_item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f00;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 0.5px -0.6px 5px white;
+    border-radius: 50%;
+    box-shadow: 10px 1px 10px 1px white;
+    flex:1;
+}
