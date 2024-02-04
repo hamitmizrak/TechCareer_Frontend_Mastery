@@ -4,6 +4,14 @@
     box-sizing: border-box; /*width:400  =width+border+padding*/
 }
 
+html{
+font-size:20px;
+}
+
+body{
+padding:0 10%;
+}
+
 
 /*External CSS*/
 h2{
@@ -128,4 +136,49 @@ h2{
 .a_link:hover{
     color:#000;
     background-color: #f00;
+}
+
+/*List*/
+#ul_id{
+    list-style-type: square;
+    list-style-type: none;
+}
+
+#ul_id li{
+    color:black;
+    background-color: beige;
+    border:1px solid rgba(0,0,0,.8);
+    display:inline-block;
+    padding:1rem;
+    text-transform: uppercase;
+}
+
+#ul_id li:hover{
+    color:beige;
+    background-color:black ;
+}
+
+/*Table*/
+table{
+    width:100%;
+    border-collapse: collapse;
+    border:1px solid red;
+}
+table th{
+    background-color: #000;
+    color:white;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+table td{
+    background-color: #f00;
+    color:white;
+    padding: 0.5rem;
+    text-align: center;
+    border:1px solid #000;
+}
+
+table td:hover{
+    background-color: white;
+    color:#f00; 
 }
