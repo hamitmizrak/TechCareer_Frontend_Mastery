@@ -4,12 +4,20 @@
     box-sizing: border-box; /*width:400  =width+border+padding*/
 }
 
+/*Root*/
+:root{
+    --main_color:white;
+    --main_bgcolor:#000;
+}
+
 html{
 font-size:20px;
 }
 
 body{
 padding:0 10%;
+color:var(--main_color);
+background-color: var(--main_bgcolor);
 }
 
 
@@ -193,3 +201,53 @@ table td:hover{
 #my_clip_path{
     clip-path: polygon(55% 0%, 100% 55%, 55% 100%, 0 50%);
 }
+
+/*Selector*/
+/* p{
+    color:blue;
+    background-color: white;
+} */
+
+/* div p{
+    color:blue;
+    background-color: yellow;
+} */
+
+/* div> p{
+    color:blue;
+    background-color: yellow;
+}
+
+p::before{
+    content: "Frontend ";
+}
+
+p::after{
+    content: "Node js ";
+}
+
+p:hover{
+    color:blue;
+    background-color: green;
+}
+
+p:nth-child(even){
+    color:green;
+    background-color: blue;
+} */
+
+/* div~p{
+    color:blue;
+    background-color: green;  
+} */
+
+div+p{
+    color:blue;
+    background-color: green;  
+}
+
+/*
+input[type="text"]{
+     background-color: white;
+}
+*/
