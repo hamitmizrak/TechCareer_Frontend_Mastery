@@ -63,3 +63,36 @@ h2{
     border-bottom-left-radius: 10px;
     border-radius: 50%;
 }
+
+/*Color  .div_common */
+.div_common{
+    /* 
+    height: 1rem;
+    width: 50%; 
+    */
+    height: 100px;
+    width:50%; 
+    margin-bottom:20px;
+    padding:2rem;
+    box-shadow: 10px 1px 10px 1px rgba(0,0,0,.7);
+}
+
+.color_class{
+    color:white;
+    background-color: black;
+    background-color: red;
+    background-color: #f00;
+    background-color: #ff0000;
+    background-color: rgb(255,0,0);
+    background-color: rgba(255,0,0,0.6);
+    background-color: rgba(255,0,0,.6);
+    background-color: hsl(0,100%,50%);
+    /*
+    hsl: 
+    h: Hue (Ton: 0-360)
+    s: Saturation (Doygunluk: %0-%100)
+    l: Lightness (Açıklık %0-%100)
+    */
+    background-color: hsla(0,100%,50%,0.6);
+    background-color: hsla(0,100%,50%,.6);
+}
