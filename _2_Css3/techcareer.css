@@ -1,3 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*width:400  =width+border+padding*/
+}
+
+
 /*External CSS*/
 h2{
     color:orange;
@@ -75,6 +82,10 @@ h2{
     margin-bottom:20px;
     padding:2rem;
     box-shadow: 10px 1px 10px 1px rgba(0,0,0,.7);
+    cursor: pointer;
+    display: block;
+    display: inline-block;
+    display: inline;
 }
 
 .color_class{
@@ -95,4 +106,26 @@ h2{
     */
     background-color: hsla(0,100%,50%,0.6);
     background-color: hsla(0,100%,50%,.6);
+}
+
+.a_link{
+    color: #f00;
+    background-color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 0.5px -0.6px 5px black;
+    padding:0.4rem;
+    border-radius: 5%;
+    border:none;
+    display: block;
+    /* display:none;
+    visibility: hidden; */
+}
+
+.a_link:hover{
+    color:#000;
+    background-color: #f00;
 }
