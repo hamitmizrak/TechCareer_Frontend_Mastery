@@ -490,7 +490,6 @@ input[type="reset"],button[type="submit"]{
       );
     color:white;
     padding:0.4rem;
-    transition: all 4s ease-out;
 }
 
 input[type="reset"]:hover,button[type="submit"]:hover{
@@ -502,4 +501,11 @@ input[type="reset"]:hover,button[type="submit"]:hover{
     color:white;
     padding:0.4rem;
     text-transform: uppercase;
+}
+
+.line-clamp5{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden !important;
+    -webkit-line-clamp: 5;
 }
