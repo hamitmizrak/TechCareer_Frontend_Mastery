@@ -452,3 +452,54 @@ img {
   width: 100%;
   height: 200px;
 }
+
+
+#form_submit{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4%;
+}
+
+/*FORM*/
+.form_data > label {
+  display: block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.form_data > input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: rgb(206, 208, 200);
+}
+
+input[type="reset"],button[type="submit"]{
+    background: linear-gradient(
+        to left,
+        blue,
+        green
+      );
+    color:white;
+    padding:0.4rem;
+    transition: all 4s ease-out;
+}
+
+input[type="reset"]:hover,button[type="submit"]:hover{
+    background: linear-gradient(
+        to right,
+        blue,
+        green
+      );
+    color:white;
+    padding:0.4rem;
+    text-transform: uppercase;
+}
