@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="template.css">
 </head>
 
-<body class="container ">
+<body class="container" data-bs-spy="scroll" data-bs-target="#navbar_id" data-bs-offset="0">
     <!-- Start Code  -->
 
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav id="navbar_id" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -32,6 +32,15 @@
                         <a class="nav-link active" href="#" aria-current="page">Home
                             <span class="visually-hidden">(current)</span></a>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product_id">Ürünler</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme_id">About me</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#login_id" href="#">Login</a>
                     </li>
@@ -204,6 +213,291 @@
     </nav>
     <!-- breadcrump start -->
 
+    <main>
+        <section id="product_id">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../image/robot insan.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Header Lorem ipsum dolor dipisicing elit.</h4>
+                                <p class="card-text line-clamp6">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vel,
+                                    dignissimos suscipit. Odio, deserunt cum. Molestiae adipisci aliquid facilis unde
+                                    neque
+                                    natus, id iusto quod, qui fuga ad! Magnam, distinctio rem?
+                                    Doloribus quidem culpa accusamus eveniet rerum! Hic consequuntur explicabo voluptate
+                                    iusto
+                                    possimus, saepe, tempora deserunt illo consectetur earum quaerat laboriosam eaque
+                                    aspernatur
+                                    sapiente incidunt nemo dolores accusantium necessitatibus error dolorem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../image/robot insan.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Header Lorem ipsum dolor dipisicing elit.</h4>
+                                <p class="card-text line-clamp6">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vel,
+                                    dignissimos suscipit. Odio, deserunt cum. Molestiae adipisci aliquid facilis unde
+                                    neque
+                                    natus, id iusto quod, qui fuga ad! Magnam, distinctio rem?
+                                    Doloribus quidem culpa accusamus eveniet rerum! Hic consequuntur explicabo voluptate
+                                    iusto
+                                    possimus, saepe, tempora deserunt illo consectetur earum quaerat laboriosam eaque
+                                    aspernatur
+                                    sapiente incidunt nemo dolores accusantium necessitatibus error dolorem!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../image/robot insan.png" alt="Title" />
+                            <div class="card-body">
+                                <h4 class="card-title">Header Lorem ipsum dolor dipisicing elit.</h4>
+                                <p class="card-text line-clamp6">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Vel,
+                                    dignissimos suscipit. Odio, deserunt cum. Molestiae adipisci aliquid facilis unde
+                                    neque
+                                    natus, id iusto quod, qui fuga ad! Magnam, distinctio rem?
+                                    Doloribus quidem culpa accusamus eveniet rerum! Hic consequuntur explicabo voluptate
+                                    iusto
+                                    possimus, saepe, tempora deserunt illo consectetur earum quaerat laboriosam eaque
+                                    aspernatur
+                                    sapiente incidunt nemo dolores accusantium necessitatibus error dolorem!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="aboutme_id">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="../image/resim.png" class="img" alt="">
+                    </div>
+                    <div class="col">
+                        <h2 class="display-4">
+                            Başlık Lorem ipsum</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad excepturi aliquid, voluptatibus
+                            modi architecto corrupti autem, obcaecati nemo maiores dolorum perferendis? Eveniet, labore
+                            aperiam corrupti repellat et aspernatur velit porro.
+                            Fugiat adipisci amet fuga vel ducimus! Quia ad eum, amet quibusdam eius repellendus
+                            voluptatibus, aut libero temporibus eveniet aperiam obcaecati? Repellat magnam vel
+                            temporibus fugit aspernatur perspiciatis facilis nesciunt ea.
+                            Ratione recusandae doloribus ad consectetur corporis eos in saepe expedita laborum a autem
+                            quae porro quisquam facilis inventore sed rem alias voluptatem architecto quia, odit qui est
+                            esse? Expedita, repellat.
+                            Incidunt voluptatum fugit harum autem vel suscipit soluta fugiat cum reiciendis quae ratione
+                            illo illum placeat, exercitationem tenetur quaerat numquam voluptate sequi ex aliquam
+                            ducimus. Sit consequatur accusantium aperiam alias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <br><br><br><br>
+    <hr>
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
+
+    <br><br><br><br>
+    <hr>
+    <!-- placeholders -->
+    <div class="card">
+        <img src="../image/clear.png" class="card-img-top" alt="...">
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" aria-hidden="true">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+            </p>
+            <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <hr>
+    <!-- badge -->
+    <button type="button" class="btn btn-primary">
+        Notifications <span class="badge text-bg-secondary">4</span>
+    </button>
+
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+    </div>
+
+    <br><br><br><br>
+    <hr>
+    <!-- dropdown -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    </div>
+
+    <br><br><br><br>
+    <hr>
+    <!-- accordion start-->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth noting that
+                    just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit
+                    overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- tooltip start -->
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-title="Tooltip on top">
+        Tooltip on top
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+        data-bs-title="Tooltip on right">
+        Tooltip on right
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-title="Tooltip on bottom">
+        Tooltip on bottom
+    </button>
+    <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+        data-bs-title="Tooltip on left">
+        Tooltip on left
+    </button>
+
+    <!-- tooltip start -->
+
+
+
+    <!-- pagination start -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination    ">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- pagination start -->
+
+
     <!-- spinner start -->
     <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
@@ -252,24 +546,24 @@
 
     <div class="container text-center">
         <div class="row">
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
+            <div class="col">
+                Column
+            </div>
         </div>
-      </div>
+    </div>
 
 
-<div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
-<div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
-<div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
-<div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
-<div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>
+    <div class="z-3 position-absolute p-5 rounded-3"><span>z-3</span></div>
+    <div class="z-2 position-absolute p-5 rounded-3"><span>z-2</span></div>
+    <div class="z-1 position-absolute p-5 rounded-3"><span>z-1</span></div>
+    <div class="z-0 position-absolute p-5 rounded-3"><span>z-0</span></div>
+    <div class="z-n1 position-absolute p-5 rounded-3"><span>z-n1</span></div>
 
     <br><br>
     <hr>
