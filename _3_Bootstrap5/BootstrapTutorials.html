@@ -9,6 +9,9 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="./bootstrap_config_files/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="template.css">
 </head>
 
 <body class="container ">
@@ -17,13 +20,95 @@
     <hr>
     <br><br>
     <hr>
+    <h1>Form</h1>
+
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <div class="form-group mb-4 col-sm-6 col-md-4 col-lg-3 shadow">
+                    <label for="ufullname">Adınız Soyadınız</label>
+                    <input type="text" class="form-control" id="ufullname" placeholder="Enter full name" title="Adınız">
+                    <small id="fullNameHelp" class="form-text text-muted">We'll never share your fullname with anyone
+                        else.</small>
+                </div>
+                <div class="form-group mb-4 col-sm-6 col-md-4 col-lg-3 shadow">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group mb-4 col-sm-6 col-md-4 col-lg-3 shadow">
+                    <label for="upassword">Email address</label>
+                    <input type="password" class="form-control" id="upassword" placeholder="Enter password">
+                    <small id="emailHelp" class="form-text text-danger">We'll never share your password with anyone
+                        else.</small>
+                </div>
+                <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+                    <input type="reset" value="Temizle" class="btn btn-danger">
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+    <hr>
+    <br><br>
+    <hr>
+    <h1>Responsive Design</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 shadow mb-3 bg-primary">
+                <p class="line-clamp6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda! Alias
+                    quia nesciunt id quibusdam, cumque repellendus magnam ad rerum culpa numquam? Totam et soluta veniam
+                    molestiae qui, corporis minus!
+                    Natus, praesentium nesciunt, molestiae illum excepturi error quis iusto consectetur laudantium enim
+                    odio? Quas facilis officia officiis et totam consequatur ipsa aspernatur impedit dolorem. Labore
+                    voluptatem officia esse aperiam repellat!</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3  shadow mb-3 bg-secondary">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda! Alias quia nesciunt id
+                    quibusdam, cumque repellendus magnam ad rerum culpa numquam? Totam et soluta veniam molestiae qui,
+                    corporis minus!
+                    Natus, praesentium nesciunt, molestiae illum excepturi error quis iusto consectetur laudantium enim
+                    odio? Quas facilis officia officiis et totam consequatur ipsa aspernatur impedit dolorem. Labore
+                    voluptatem officia esse aperiam repellat!</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3  shadow mb-3 bg-warning ">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda! Alias quia nesciunt id
+                    quibusdam, cumque repellendus magnam ad rerum culpa numquam? Totam et soluta veniam molestiae qui,
+                    corporis minus!
+                    Natus, praesentium nesciunt, molestiae illum excepturi error quis iusto consectetur laudantium enim
+                    odio? Quas facilis officia officiis et totam consequatur ipsa aspernatur impedit dolorem. Labore
+                    voluptatem officia esse aperiam repellat!</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3  shadow mb-3 bg-info">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda! Alias quia nesciunt id
+                    quibusdam, cumque repellendus magnam ad rerum culpa numquam? Totam et soluta veniam molestiae qui,
+                    corporis minus!
+                    Natus, praesentium nesciunt, molestiae illum excepturi error quis iusto consectetur laudantium enim
+                    odio? Quas facilis officia officiis et totam consequatur ipsa aspernatur impedit dolorem. Labore
+                    voluptatem officia esse aperiam repellat!</p>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3  shadow mb-3 bg-dark text-white">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, assumenda! Alias quia nesciunt id
+                    quibusdam, cumque repellendus magnam ad rerum culpa numquam? Totam et soluta veniam molestiae qui,
+                    corporis minus!
+                    Natus, praesentium nesciunt, molestiae illum excepturi error quis iusto consectetur laudantium enim
+                    odio? Quas facilis officia officiis et totam consequatur ipsa aspernatur impedit dolorem. Labore
+                    voluptatem officia esse aperiam repellat!</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br><br>
+    <hr>
     <h1>Table</h1>
-    <div
-        class="table-responsive-md"
-    >
-        <table
-            class="table table-warning table-hover table-striped table-responsive"
-        >
+    <div class="table-responsive-md">
+        <table class="table table-warning table-hover table-striped table-responsive">
             <thead>
                 <tr>
                     <th scope="col">Column 1</th>
@@ -75,7 +160,7 @@
             </tbody>
         </table>
     </div>
-    
+
 
     <hr>
     <br><br>
@@ -87,7 +172,7 @@
         <li class="list-group-item">Item</li>
         <li class="list-group-item disabled">Disabled item</li>
     </ul>
-    
+
 
     <br></br>
 
@@ -96,7 +181,7 @@
         <li class="list-group-item">Item</li>
         <li class="list-group-item disabled">Disabled item</li>
     </ol>
-    
+
 
     <br></br>
 
@@ -114,30 +199,19 @@
     <br><br>
     <hr>
     <h1>Alert</h1>
-    <div
-        class="alert alert-dark alert-dismissible fade show"
-        role="alert"
-    >
-        <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="alert"
-            aria-label="Close"
-        ></button>
-    
+    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
         <strong>Holy guacamole!</strong> You should check in on some of
         those fields below.
     </div>
-    
 
 
-    <div
-        class="alert alert-info"
-        role="alert"
-    >
+
+    <div class="alert alert-info" role="alert">
         <strong>Alert Heading</strong> Some Word
     </div>
-    
+
     <div class="alert alert-primary" role="alert">
         Bu Bir Alert primary
     </div>
@@ -178,7 +252,8 @@
     <br><br><br><br>
     <!-- Image - Shodow -->
     <div style="height: 200px;">
-        <img class="w-50 mh-50 shadow-lg rounded-circle  img-fluid img-thumbnail rounded" src="../image/email.png" alt="not image">
+        <img class="w-50 mh-50 shadow-lg rounded-circle  img-fluid img-thumbnail rounded" src="../image/email.png"
+            alt="not image">
     </div>
 
     <br><br><br><br>
