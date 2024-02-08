@@ -32,6 +32,9 @@
                         <a class="nav-link active" href="#" aria-current="page">Home
                             <span class="visually-hidden">(current)</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#login_id" href="#">Login</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#register_id">Register</a>
@@ -55,73 +58,78 @@
         </div>
     </nav>
     <!-- navbar end -->
+    <br><br>
 
+    <!-- Login start Off Canvas -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="login_id"
+        aria-labelledby="Enable both scrolling & backdrop">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="Enable both scrolling & backdrop">
+                Login
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="form-group mb-4 shadow">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="d-none  form-text text-muted">We'll never share your
+                                email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group mb-4  shadow">
+                            <label for="upassword">Pasword</label>
+                            <input type="password" class="form-control" id="upassword" placeholder="Enter password">
+                            <small id="emailHelp" class="d-none  form-text text-danger">We'll never share your
+                                password with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group mb-4 col-sm-12 col-md-12 col-lg-12 shadow">
+                            <input type="reset" value="Temizle" class="btn btn-danger">
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Login end Off Canvas -->
+
+    <!-- Carousel start -->
     <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators">
-            <li
-                data-bs-target="#carouselId"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="First slide"
-            ></li>
-            <li
-                data-bs-target="#carouselId"
-                data-bs-slide-to="1"
-                aria-label="Second slide"
-            ></li>
-            <li
-                data-bs-target="#carouselId"
-                data-bs-slide-to="2"
-                aria-label="Third slide"
-            ></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img
-                    src="../image/email.png"
-                    class="w-100 d-block"
-                    alt="First slide"
-                />
+                <img src="../image/email.png" class="w-100 d-block" alt="First slide" />
             </div>
             <div class="carousel-item">
-                <img
-                    src="../image/list.png"
-                    class="w-100 d-block"
-                    alt="Second slide"
-                />
+                <img src="../image/list.png" class="w-100 d-block" alt="Second slide" />
             </div>
             <div class="carousel-item">
-                <img
-                    src="../image/masa.png"
-                    class="w-100 d-block"
-                    alt="Third slide"
-                />
+                <img src="../image/masa.png" class="w-100 d-block" alt="Third slide" />
             </div>
         </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="prev"
-        >
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="next"
-        >
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
+    <!-- Carousel end -->
 
-
-
+    <!-- register modal start -->
     <!-- Modal Body -->
     <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div class="modal fade" id="register_id" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -139,8 +147,6 @@
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                         Close
                     </button>
-
-
                     <form action="">
                         <div class="container">
                             <div class="row">
@@ -180,6 +186,7 @@
             </div>
         </div>
     </div>
+    <!-- register modal end -->
 
     <!-- Optional: Place to the bottom of scripts -->
     <!-- <script>
@@ -189,6 +196,48 @@
         );
     </script> -->
 
+    <!-- breadcrump start -->
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="#">Main</a>
+        <a class="breadcrumb-item" href="#">Sub</a>
+        <span class="breadcrumb-item active" aria-current="page">Active</span>
+    </nav>
+    <!-- breadcrump start -->
+
+    <!-- Toast Start -->
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+    <!-- Toast End -->
+
+    <!-- Flexbox container for aligning the toasts -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-start align-items-start"
+        style="min-height: 200px">
+        <!-- Then put toasts within -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="" class="rounded me-2" alt="{4:Bootstrap}" />
+                <strong class="me-auto">{4:Bootstrap}</strong>
+                <small>{5:11 mins ago}</small>
+                <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+    $('.toast').toast(option)
 
 
     <hr>
