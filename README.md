@@ -30,6 +30,23 @@
 ---
 
 ## Tailwind
+```sh
+node -v 
+npm -v
+
+npm init -y (Package.json)
+
+https://tailwindcss.com/docs/installation
+npm install -D tailwindcss (Tailwind Development)
+npx tailwindcss init (tailwind.config.js)
+
+package.json
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./tailwind_files/input.css -o ./tailwind_files/output.css --watch"
+  },
+
+  npm run tailwind
+```
 
 ---
 

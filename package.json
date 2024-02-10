@@ -1,0 +1,25 @@
+{
+  "name": "techcareer_project_1",
+  "version": "1.0.0",
+  "description": "[GitHub](https://github.com/hamitmizrak/TechCareer_Frontend_Mastery)\r [Font Awesome](https://cdnjs.com/libraries/font-awesome)",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./_4_TailwindCss/input.css -o ./_4_TailwindCss/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Html5",
+    "Css3",
+    "Js",
+    "jQuery",
+    "Bootstrap5",
+    "React JS",
+    "Node JS",
+    "Tailwind"
+  ],
+  "author": "Hamit Mızrak",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
