@@ -45,6 +45,42 @@
 <body class="container">
     <!-- Start Code -->
 
+    <!-- SPINNER /FORM -->
+    <h3 class="text-center text-purple-400 uppercase">Form </h3>
+    <form action="#!" method="get" autocomplete="on" class="w-full max-w-sm">
+        <!-- Email -->
+        <div class="flex items-center bg-transparent border-b-2 border-blue-500">
+            <input 
+            type="email" 
+            placeholder="Email giriniz" 
+            required 
+            title="email alanı"
+            id="uemail" 
+            name="uemail"
+            class="w-full rounded focuse:outline-none focus:border-red-500 bg-transparent border-b-2 border-black text-black p-2 m-2 "
+            >
+        </div>
+         <!-- Password -->
+         <div class="flex items-center bg-transparent border-b-2 border-blue-500">
+            <input 
+            type="password" 
+            placeholder="Şifre giriniz" 
+            required 
+            title="Şifre alanı"
+            id="upassword" 
+            name="upassword"
+            class="w-full rounded focuse:outline-none focus:border-red-500 bg-transparent border-b-2 border-black text-black p-2 m-2 "
+            >
+        </div>
+
+        <button class="flex-shrink p-3 shadow-lg rounded bg-blue-600 text-black hover:bg-yellow-300" type="reset">Temizle</button>
+        <button class=" flex-shrink p-3 shadow-lg rounded bg-blue-600 text-black hover:bg-yellow-300" type="submit">Gönder</button>
+
+        <div class="flex items-center justify-center h-screen">
+            <div class="animate-spin rounded-full border-t-4 border-opacity-35 h-2 w-2"></div>
+        </div>
+    </form>
+
     <!-- ALERT -->
     <div class="bg-yellow-100 text-yellow-800 p-5 border-yellow-400 border-l-4">
         <p class="font-bold">UYARI</p>
