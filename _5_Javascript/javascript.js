@@ -88,26 +88,93 @@ multiple Comment3
 
 /////////////////////////////////////////////////////////
 /// MATH
-let user=Number(prompt("Lütfen 1.sayıyı giriniz"));
+// let user=Number(prompt("Lütfen 1.sayıyı giriniz"));
 
-console.log("PI: "+Math.PI);
-console.log("E: "+Math.E);
-console.log("Mutlak: "+Math.abs(user));
-console.log("Karekök: "+Math.sqrt(user));
+// console.log("PI: "+Math.PI);
+// console.log("E: "+Math.E);
+// console.log("Mutlak: "+Math.abs(user));
+// console.log("Karekök: "+Math.sqrt(user));
 
-console.log("Üslü: "+Math.pow(user,2));
-console.log("Üslü: "+(user**2));
+// console.log("Üslü: "+Math.pow(user,2));
+// console.log("Üslü: "+(user**2));
 
-console.log("Yuvarla: "+Math.round(7.3));
-console.log("Yuvarla: "+Math.round(7.5));
+// console.log("Yuvarla: "+Math.round(7.3));
+// console.log("Yuvarla: "+Math.round(7.5));
 
-console.log("Aşağı Yuvarla: "+Math.floor(8.9));
-console.log("Yukarı Yuvarla: "+Math.ceil(8.1));
+// console.log("Aşağı Yuvarla: "+Math.floor(8.9));
+// console.log("Yukarı Yuvarla: "+Math.ceil(8.1));
 
-console.log("Sin: "+Math.sin(45));
+// console.log("Sin: "+Math.sin(45));
 
-console.log("Rastgele: "+Math.random());
-console.log("Rastgele: "+Math.random()*4+1);
-console.log("Rastgele: "+Math.floor(Math.random()*4+1))  ;
+// console.log("Rastgele: "+Math.random());
+// console.log("Rastgele: "+Math.random()*4+1);
+// console.log("Rastgele: "+Math.floor(Math.random()*4+1));
+
+/////////////////////////////////////////////////////////
+/// TYPEOF
+// let variable1=44
+// console.log(typeof variable1);
+
+// //variable1="44";
+// variable1=String(44);
+// console.log(typeof variable1);
+
+// variable1=true;
+// console.log(typeof variable1);
+
+// variable1=()=>{};
+// console.log(typeof variable1);
+
+/////////////////////////////////////////////////////////
+/// UNDEFINED 
+let data;
+console.log(data);
 
 
+/////////////////////////////////////////////////////////
+/// NaN 
+// let data1=44/22;
+// console.log(data1);
+
+
+// data1=44/"22";
+// console.log(data1);
+
+// data1=44/Number("22");
+// console.log(data1);
+
+
+// data1=44/"abs";
+// console.log(data1);
+
+// if(isNaN(data1)){
+//     console.log("Lütfen sayı giriniz");
+// }
+
+
+/////////////////////////////////////////////////////////
+/// INFINITY
+// console.log(0/44); 
+// console.log(44/0); 
+
+/////////////////////////////////////////////////////////
+/// ESCAPE CHARACTER 
+let escape1="1.alan '2.alan";
+console.log(escape1);
+
+escape1="1.alan \"2.alan";
+console.log(escape1);
+
+escape1='1.alan \'2.alan';
+console.log(escape1);
+
+escape1='1.alan \"2.alan';
+console.log(escape1);
+
+
+escape1='1.satır \n\t2.satır\u00A9';
+console.log(escape1);
+
+// null 
+let data3=null;
+console.log(data3);
