@@ -218,7 +218,7 @@ console.log(decimal);
 let hexadecimal=0xfbc12;
 console.log(hexadecimal);
 
-// 10 tabandan istediğimiz diğer tabanalar çevirmek
+// 10 tabandan istediğimiz diğer tabanlara çevirmek
 let number3=4444;
 // Binary (2)
 let binary3=number3.toString(2);
@@ -237,6 +237,7 @@ let hexadecimal3=number3.toString(16);
 console.log(hexadecimal3);
 
 
+// Fixed
 const number4=1234.56749;
 console.log(number4.toFixed(3));
 console.log(number4.toPrecision(3));
