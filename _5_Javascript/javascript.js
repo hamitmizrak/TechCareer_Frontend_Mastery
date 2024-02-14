@@ -416,7 +416,7 @@ let loop1 =() => {
     }
     // for(;;){} => Sonsuz Döngü
   };
-  loop1 () 
+  //loop1 () 
 
   // While Loop
 let loop2 =() => {
@@ -429,7 +429,7 @@ let loop2 =() => {
     }
     // While(true){}
   };
-  loop2 () 
+  //loop2 () 
 
     // While Loop
 let loop3 =() => {
@@ -443,4 +443,22 @@ let loop3 =() => {
     while ( i < 10);
     // While(true){}
   };
-  loop3 () 
+ loop3 () 
+
+  /////////////////////////////////////
+//  Exception Handling
+let exceptionHandling =
+() => {
+    try {
+        alerx("Pop-up")
+        
+    } catch (err) {
+        console.error(err);
+        console.error(err.message);
+    } finally{
+        console.log("port.close");
+    }
+    console.log("son satır mutlaka görünsün");
+    // throw new Error("Hata44");
+};
+exceptionHandling();
