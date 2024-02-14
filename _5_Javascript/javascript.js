@@ -443,7 +443,7 @@ let loop3 =() => {
     while ( i < 10);
     // While(true){}
   };
- loop3 () 
+ //loop3 () 
 
   /////////////////////////////////////
 //  Exception Handling
@@ -461,4 +461,23 @@ let exceptionHandling =
     console.log("son satır mutlaka görünsün");
     // throw new Error("Hata44");
 };
-exceptionHandling();
+//exceptionHandling();
+
+//////////////////////////////////////////
+//  setTimeOut Function
+let setTimeOutFunction =
+() => {
+setTimeout(()=>{
+console.log("Çalışsın Set Time Out");
+},3000)
+}
+setTimeOutFunction()
+
+//  setTimeOut Function
+let setIntervalFunction =
+() => {
+setInterval(()=>{
+console.log("Sürekli Çalışsın ");
+},1000)
+}
+ setIntervalFunction();
