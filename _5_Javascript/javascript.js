@@ -247,29 +247,31 @@ console.log(data);
 
 /////////////////////////////////////////////////////////
 /// METİNSEL İŞLEMLER
-let vocabulary=" Html5, CSS3, javascript, jquery,Html5 ";
-vocabulary=String(vocabulary);
-//vocabulary=vocabulary.toString();
-//vocabulary=vocabulary.trim();
+// let vocabulary=" Html5, CSS3, javascript, jquery,Html5 ";
+// vocabulary=String(vocabulary);
+// //vocabulary=vocabulary.toString();
+// //vocabulary=vocabulary.trim();
 
-console.log(vocabulary);
-console.log(vocabulary.length);
-console.log(vocabulary.trim().length);
+// console.log(vocabulary);
+// console.log(vocabulary.length);
+// console.log(vocabulary.trim().length);
 
-console.log(vocabulary.toUpperCase());
-console.log(vocabulary.toLocaleLowerCase());
+// console.log(vocabulary.toUpperCase());
+// console.log(vocabulary.toLocaleLowerCase());
 
-console.log(vocabulary.startsWith("H"));
-console.log(vocabulary.endsWith("y"));
+// console.log(vocabulary.startsWith("H"));
+// console.log(vocabulary.endsWith("y"));
 
-console.log(vocabulary.concat("-INC"));
-console.log(vocabulary.replace("jquery","React JS"));
+// console.log(vocabulary.concat("-INC"));
+// console.log(vocabulary.replace("jquery","React JS"));
 
-console.log(vocabulary.substring(4));
-console.log(vocabulary.substring(1,3)); // 1<=X<=3-1
+// console.log(vocabulary.substring(4));
+// console.log(vocabulary.substring(1,3)); // 1<=X<=3-1
 
-console.log(vocabulary.indexOf("Html5")); 
-console.log(vocabulary.lastIndexOf("Html5")); 
+// console.log(vocabulary.indexOf("Html5")); 
+// console.log(vocabulary.lastIndexOf("Html5")); 
 
-console.log(vocabulary.charAt(1)); 
+// console.log(vocabulary.charAt(1)); 
 
+/////////////////////////////////////////////////////////
+/// FUNCTION
