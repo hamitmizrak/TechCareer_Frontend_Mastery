@@ -127,8 +127,8 @@ multiple Comment3
 
 /////////////////////////////////////////////////////////
 /// UNDEFINED 
-let data;
-console.log(data);
+//let data;
+//console.log(data);
 
 
 /////////////////////////////////////////////////////////
@@ -275,3 +275,58 @@ console.log(data);
 
 /////////////////////////////////////////////////////////
 /// FUNCTION
+// // 1-) parametresiz Returnsuz
+// function parametresizReturnsuz(){
+//     console.log("Parametresiz Returnsuz");
+// }
+// parametresizReturnsuz();
+
+// // 2-) parametresiz Returnsuz
+// function parametreliReturnsuz(adi,soyadi,memleket){
+//     console.log("Parametreli Returnsuz: "+adi+" "+soyadi+" "+memleket);
+// }
+// parametreliReturnsuz("Hamit","Mızrak","Malatya");
+
+// // 3-) parametresiz Returnsuz
+// function parametresizReturnlu(){
+//    return "Parametresiz Returnlu";
+// }
+// const data3=parametresizReturnlu();
+// console.log(data3);
+
+// // 4-) parametresiz Returnsuz
+// function parametreliReturnlu(adi,soyadi,memleket){
+//     // return "Parametresiz Returnlu: "+adi+" "+soyadi+" "+memleket;
+//     return `Parametresiz Returnlu: ${adi} ${soyadi} ${memleket}`; 
+//  }
+//  const data4=parametreliReturnlu("Hamit","Mızrak","Malatya");
+//  console.log(data4);
+
+ //////////////////////////////////////
+ // Immedia Function
+(function (){
+    console.log("Immedia Anonymous Function");
+ })();
+
+ (()=>{
+    console.log("Immedia Arrow Function");
+ })();
+
+
+ // NORMAL
+//  function normalFunction(){
+//     console.log("normal Function");
+//  }
+//  normalFunction();
+
+//  // Anonymous Function
+//  const anonymousFunction = function (){
+//     console.log("anonymous Function");
+//  }
+//  anonymousFunction();
+
+//   // arrow Function
+//   const arrowFunction =  ()=>{
+//     console.log("arrow  Function");
+//  }
+//  arrowFunction()
