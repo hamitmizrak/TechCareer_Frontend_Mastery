@@ -477,7 +477,7 @@ setTimeOutFunction()
 let setIntervalFunction =
 () => {
 setInterval(()=>{
-console.log("Sürekli Çalışsın ");
+console.log("Sürekli Çalışsın setInterval ");
 },1000)
 }
  setIntervalFunction();
