@@ -181,69 +181,95 @@ console.log(data);
 
 /////////////////////////////////////////////////////////
 /// SAYISAL İŞLEMLER
-let number1=55.44;
-//document.writeln(number1);
-// NaN , isNaN
-console.log(number1);
-console.log(typeof number1);
+// let number1=55.44;
+// //document.writeln(number1);
+// // NaN , isNaN
+// console.log(number1);
+// console.log(typeof number1);
 
-//Cast
-console.log(Number(number1));
-console.log(parseInt(number1));
-console.log(parseFloat(number1));
+// //Cast
+// console.log(Number(number1));
+// console.log(parseInt(number1));
+// console.log(parseFloat(number1));
 
-// Bilimsel Gösterim
-let normal=1300000;
-console.log(normal);
+// // Bilimsel Gösterim
+// let normal=1300000;
+// console.log(normal);
 
-let bilimsel=13E+5;
-console.log(bilimsel);
-bilimsel=13E-5;
-console.log(bilimsel);
+// let bilimsel=13E+5;
+// console.log(bilimsel);
+// bilimsel=13E-5;
+// console.log(bilimsel);
 
-const number2=1453.1234;
+// const number2=1453.1234;
 
-console.log(number2.toExponential(1));
+// console.log(number2.toExponential(1));
 
-// Verilen Bir tabanda 10'luk tabana çevirmek
-let binary=0b01010101111;
-console.log(binary);
+// // Verilen Bir tabanda 10'luk tabana çevirmek
+// let binary=0b01010101111;
+// console.log(binary);
 
-let octal=0o76511;
-console.log(octal);
+// let octal=0o76511;
+// console.log(octal);
 
-let decimal=123456;
-console.log(decimal);
+// let decimal=123456;
+// console.log(decimal);
 
-let hexadecimal=0xfbc12;
-console.log(hexadecimal);
+// let hexadecimal=0xfbc12;
+// console.log(hexadecimal);
 
-// 10 tabandan istediğimiz diğer tabanlara çevirmek
-let number3=4444;
-// Binary (2)
-let binary3=number3.toString(2);
-console.log(binary3);
+// // 10 tabandan istediğimiz diğer tabanlara çevirmek
+// let number3=4444;
+// // Binary (2)
+// let binary3=number3.toString(2);
+// console.log(binary3);
 
-// Octal (2)
-let octal3=number3.toString(8);
-console.log(octal3);
+// // Octal (2)
+// let octal3=number3.toString(8);
+// console.log(octal3);
 
-// Decimal(10)
-let decimal3=number3.toString(10);
-console.log(decimal3);
+// // Decimal(10)
+// let decimal3=number3.toString(10);
+// console.log(decimal3);
 
-// Decimal(10)
-let hexadecimal3=number3.toString(16);
-console.log(hexadecimal3);
+// // Decimal(10)
+// let hexadecimal3=number3.toString(16);
+// console.log(hexadecimal3);
 
 
-// Fixed
-const number4=1234.56749;
-console.log(number4.toFixed(3));
-console.log(number4.toPrecision(3));
+// // Fixed
+// const number4=1234.56749;
+// console.log(number4.toFixed(3));
+// console.log(number4.toPrecision(3));
 
 
 
 
 /////////////////////////////////////////////////////////
 /// METİNSEL İŞLEMLER
+let vocabulary=" Html5, CSS3, javascript, jquery,Html5 ";
+vocabulary=String(vocabulary);
+//vocabulary=vocabulary.toString();
+//vocabulary=vocabulary.trim();
+
+console.log(vocabulary);
+console.log(vocabulary.length);
+console.log(vocabulary.trim().length);
+
+console.log(vocabulary.toUpperCase());
+console.log(vocabulary.toLocaleLowerCase());
+
+console.log(vocabulary.startsWith("H"));
+console.log(vocabulary.endsWith("y"));
+
+console.log(vocabulary.concat("-INC"));
+console.log(vocabulary.replace("jquery","React JS"));
+
+console.log(vocabulary.substring(4));
+console.log(vocabulary.substring(1,3)); // 1<=X<=3-1
+
+console.log(vocabulary.indexOf("Html5")); 
+console.log(vocabulary.lastIndexOf("Html5")); 
+
+console.log(vocabulary.charAt(1)); 
+
