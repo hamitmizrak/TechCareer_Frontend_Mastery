@@ -70,7 +70,7 @@ multiple Comment3
 // console.log(number1%number2);
 // console.log(number1**number2);
 
-// && VE ||VEYA  ! DEĞİL > >= < <=  
+// && VE ||VEYA  ! DEĞİL > >= < <=
 // = Atama
 // == Eşittir (Türüne bakmaksızın)
 // === Eşittir (Türüne bakarak)
@@ -126,23 +126,20 @@ multiple Comment3
 // console.log(typeof variable1);
 
 /////////////////////////////////////////////////////////
-/// UNDEFINED 
+/// UNDEFINED
 //let data;
 //console.log(data);
 
-
 /////////////////////////////////////////////////////////
-/// NaN 
+/// NaN
 // let data1=44/22;
 // console.log(data1);
-
 
 // data1=44/"22";
 // console.log(data1);
 
 // data1=44/Number("22");
 // console.log(data1);
-
 
 // data1=44/"abs";
 // console.log(data1);
@@ -151,14 +148,13 @@ multiple Comment3
 //     console.log("Lütfen sayı giriniz");
 // }
 
-
 /////////////////////////////////////////////////////////
 /// INFINITY
-// console.log(0/44); 
-// console.log(44/0); 
+// console.log(0/44);
+// console.log(44/0);
 
 /////////////////////////////////////////////////////////
-/// ESCAPE CHARACTER 
+/// ESCAPE CHARACTER
 // let escape1="1.alan '2.alan";
 // console.log(escape1);
 
@@ -171,11 +167,10 @@ multiple Comment3
 // escape1='1.alan \"2.alan';
 // console.log(escape1);
 
-
 // escape1='1.satır \n\t2.satır\u00A9';
 // console.log(escape1);
 
-// // null 
+// // null
 // let data3=null;
 // console.log(data3);
 
@@ -236,14 +231,10 @@ multiple Comment3
 // let hexadecimal3=number3.toString(16);
 // console.log(hexadecimal3);
 
-
 // // Fixed
 // const number4=1234.56749;
 // console.log(number4.toFixed(3));
 // console.log(number4.toPrecision(3));
-
-
-
 
 /////////////////////////////////////////////////////////
 /// METİNSEL İŞLEMLER
@@ -268,10 +259,10 @@ multiple Comment3
 // console.log(vocabulary.substring(4));
 // console.log(vocabulary.substring(1,3)); // 1<=X<=3-1
 
-// console.log(vocabulary.indexOf("Html5")); 
-// console.log(vocabulary.lastIndexOf("Html5")); 
+// console.log(vocabulary.indexOf("Html5"));
+// console.log(vocabulary.lastIndexOf("Html5"));
 
-// console.log(vocabulary.charAt(1)); 
+// console.log(vocabulary.charAt(1));
 
 /////////////////////////////////////////////////////////
 /// FUNCTION
@@ -297,23 +288,22 @@ multiple Comment3
 // // 4-) parametresiz Returnsuz
 // function parametreliReturnlu(adi,soyadi,memleket){
 //     // return "Parametresiz Returnlu: "+adi+" "+soyadi+" "+memleket;
-//     return `Parametresiz Returnlu: ${adi} ${soyadi} ${memleket}`; 
+//     return `Parametresiz Returnlu: ${adi} ${soyadi} ${memleket}`;
 //  }
 //  const data4=parametreliReturnlu("Hamit","Mızrak","Malatya");
 //  console.log(data4);
 
- //////////////////////////////////////
- // Immedia Function
-(function (){
-    console.log("Immedia Anonymous Function");
- })();
+//////////////////////////////////////
+// Immedia Function
+// (function (){
+//     console.log("Immedia Anonymous Function");
+//  })();
 
- (()=>{
-    console.log("Immedia Arrow Function");
- })();
+//  (()=>{
+//     console.log("Immedia Arrow Function");
+//  })();
 
-
- // NORMAL
+// NORMAL
 //  function normalFunction(){
 //     console.log("normal Function");
 //  }
@@ -330,3 +320,127 @@ multiple Comment3
 //     console.log("arrow  Function");
 //  }
 //  arrowFunction()
+
+/////////////////////////////////////
+//  Conditional
+let conditional1 =
+  () => {
+    const number = 3;
+    if (
+      number > 5
+    ) {
+      console.log(
+        number +
+          " sayısı 5'ten büyüktür"
+      );
+    } else {
+      console.log(
+        number +
+          " sayısı  5'ten küçüktür"
+      );
+    }
+  };
+//conditional1();
+
+let conditional2 =
+  () => {
+    const number = 3;
+
+    let result =
+      number > 5
+        ? number +
+          " sayısı 5'ten büyüktür"
+        : number +
+          " sayısı 5'ten küçüktür";
+    console.log(
+      result
+    );
+  };
+//conditional2();
+
+
+//  Conditional
+let conditional3 =
+  () => {
+    const number = 5;
+    if (number === 1) {
+      console.log("sayı: 1 eşittir");
+    }else if (number === 2) {
+        console.log("sayı: 2 eşittir");
+      }if (number === 3) {
+        console.log("sayı: 3 eşittir");
+      }if (number === 4) {
+        console.log("sayı: 4 eşittir");
+      }if (number === 5) {
+        console.log("sayı: 5 eşittir");
+      } else {
+      console.log("Sayı 5'ten farklıdır");
+    }
+  };
+//conditional3();
+
+//  Conditional
+let conditional4 =
+  () => {
+    const number = 5;
+
+switch (number) {
+    case 2:
+        console.log("sayı: 2 eşittir");
+        break;
+        case 1:
+        console.log("sayı: 1 eşittir");
+        break;
+        case 3:
+        console.log("sayı: 3 eşittir");
+        break;
+        case 4:
+        console.log("sayı: 4 eşittir");
+        break;
+        case 5:
+        console.log("sayı: 5 eşittir");
+        break;
+
+    default:
+        console.log("Sayı 5'ten farklıdır");
+        break;
+}
+  };
+//conditional4();
+
+
+// For Loop
+let loop1 =() => {
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+    }
+    // for(;;){} => Sonsuz Döngü
+  };
+  loop1 () 
+
+  // While Loop
+let loop2 =() => {
+    let i = 0;
+    while ( i < 10) {
+        console.log(i);
+        //i++
+        //i=i+1
+        i+=1
+    }
+    // While(true){}
+  };
+  loop2 () 
+
+    // While Loop
+let loop3 =() => {
+    let i = 0;
+    do{
+        console.log(i);
+        //i++
+        //i=i+1
+        i+=1 
+    }
+    while ( i < 10);
+    // While(true){}
+  };
+  loop3 () 
