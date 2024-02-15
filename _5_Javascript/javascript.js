@@ -547,53 +547,243 @@ let setIntervalFunction =
 const callBackFunction =
   () => {
     // 1. ALAN
-    let hesapla = ( x, y, callback ) => {
+    let hesapla = (
+      x,
+      y,
+      callback
+    ) => {
       let result =
         x + y;
-      callback( result );
+      callback(
+        result
+      );
     };
 
     // 2.ALAN
-    let goster = ( data ) => { 
-      console.log( "Sonuç: " + data);
+    let goster = (
+      data
+    ) => {
+      console.log(
+        "Sonuç: " +
+          data
+      );
     };
 
-    hesapla( 5, 3, goster)
+    hesapla(
+      5,
+      3,
+      goster
+    );
   };
 //callBackFunction();
 
 // Asenkron
 // 2- Promise Function
 
-const promiseFunction = () => {
-  const myPromise= new Promise((resolve,reject)=>{
-    let number=5;  //Math.floor(Math.random()*10);
-    if(number%2==0){
-      resolve(number);
-      console.log("Çift Sayı");
-    }else{
-      reject(number);
-      console.log("Tek Sayı");
-    }
-  }).then(()=>{
-    console.log("Then Çalıştı");
-  }).catch((err)=>{
-    console.log("Catch Çalıştı");
-    console.error(err.message);
-  });
-}
-  //promiseFunction();
+const promiseFunction =
+  () => {
+    const myPromise =
+      new Promise(
+        (
+          resolve,
+          reject
+        ) => {
+          let number = 5; //Math.floor(Math.random()*10);
+          if (
+            number %
+              2 ==
+            0
+          ) {
+            resolve(
+              number
+            );
+            console.log(
+              "Çift Sayı"
+            );
+          } else {
+            reject(
+              number
+            );
+            console.log(
+              "Tek Sayı"
+            );
+          }
+        }
+      )
+        .then(
+          () => {
+            console.log(
+              "Then Çalıştı"
+            );
+          }
+        )
+        .catch(
+          (err) => {
+            console.log(
+              "Catch Çalıştı"
+            );
+            console.error(
+              err.message
+            );
+          }
+        );
+  };
+//promiseFunction();
 
 // 3. Asenkron (Asyn-Await)
-  const asynAwaitFunction = () => {
-async function myFunction(){
-  try {
-     let response=await fetch('');
-  let result=response.json();
-  } catch (error) {
-    console.log(error.message);
-  }
- 
-}
-  }
-  promiseFunction();
+const asynAwaitFunction =
+  () => {
+    async function myFunction() {
+      try {
+        let response =
+          await fetch(
+            ""
+          );
+        let result =
+          response.json();
+      } catch (error) {
+        console.log(
+          error.message
+        );
+      }
+    }
+  };
+//asynAwaitFunction();
+//////////////////////////////////////asynAwaitFunctionlet
+let diziFunction =
+  () => {
+    let dizi = [
+      1, 4, 3, 5, 6,
+      2, 7,
+    ];
+    //dizi.sort()
+    //dizi.sort().reverse()
+    console.log(
+      typeof dizi
+    );
+    console.log(
+      dizi
+    );
+    console.log(
+      dizi.length
+    );
+    console.log(
+      dizi[0]
+    );
+    console.log(
+      dizi[5]
+    );
+    console.log(
+      dizi[
+        dizi.length -
+          1
+      ]
+    );
+    console.log(
+      dizi
+        .toString()
+        .concat(
+          "merhabalar"
+        )
+    );
+    console.log(
+      dizi.join("+")
+    );
+    console.log(
+      dizi.fill(
+        "Malatya",
+        0,
+        2
+      )
+    );
+
+    let sum = 0;
+    for (
+      let i = 0;
+      i <
+      dizi.length;
+      i++
+    ) {
+      sum += i;
+    }
+    console.log(
+      sum
+    );
+
+    // FOR-IN
+    for (const temp in dizi) {
+      console.log(
+        `${temp} => ${dizi[temp]}`
+      );
+    }
+    console.log(
+      "/////////////"
+    );
+
+    // FOR-OF
+    for (const temp of dizi) {
+      console.log(
+        `${temp}`
+      );
+    }
+
+    console.log(
+      "/////////////"
+    );
+
+    dizi.push(99);
+    dizi.unshift(
+      11
+    );
+    dizi.pop();
+    dizi.shift();
+
+    dizi
+      .map(
+        (
+          value,
+          index,
+          array
+        ) => {
+          return (value =
+            value *
+            2);
+        }
+      )
+      .filter(
+        (
+          value,
+          index,
+          array
+        ) => {
+          return (
+            value >=
+            10
+          );
+        }
+      )
+      .forEach(
+        (
+          value,
+          index,
+          array
+        ) => {
+          console.log(
+            `${value}`
+          );
+        }
+      );
+    console.log(
+      "////////////////////"
+    );
+    let dizi2 = [ 1, 2, 3, 4, 5, 6, ];
+    //dizi2.splice( 0, 3 );
+    //dizi2.splice( 0, 3,"Ankara" );
+    //dizi2.splice( 0, 0,"Ankara" );
+    //dizi2.forEach( ( value, index, array ) => {
+        console.log( `${value}` );
+      }
+    );
+  };
+
+diziFunction();
