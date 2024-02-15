@@ -358,23 +358,47 @@ let conditional2 =
   };
 //conditional2();
 
-
 //  Conditional
 let conditional3 =
   () => {
     const number = 5;
-    if (number === 1) {
-      console.log("sayı: 1 eşittir");
-    }else if (number === 2) {
-        console.log("sayı: 2 eşittir");
-      }if (number === 3) {
-        console.log("sayı: 3 eşittir");
-      }if (number === 4) {
-        console.log("sayı: 4 eşittir");
-      }if (number === 5) {
-        console.log("sayı: 5 eşittir");
-      } else {
-      console.log("Sayı 5'ten farklıdır");
+    if (
+      number === 1
+    ) {
+      console.log(
+        "sayı: 1 eşittir"
+      );
+    } else if (
+      number === 2
+    ) {
+      console.log(
+        "sayı: 2 eşittir"
+      );
+    }
+    if (
+      number === 3
+    ) {
+      console.log(
+        "sayı: 3 eşittir"
+      );
+    }
+    if (
+      number === 4
+    ) {
+      console.log(
+        "sayı: 4 eşittir"
+      );
+    }
+    if (
+      number === 5
+    ) {
+      console.log(
+        "sayı: 5 eşittir"
+      );
+    } else {
+      console.log(
+        "Sayı 5'ten farklıdır"
+      );
     }
   };
 //conditional3();
@@ -384,100 +408,192 @@ let conditional4 =
   () => {
     const number = 5;
 
-switch (number) {
-    case 2:
-        console.log("sayı: 2 eşittir");
+    switch (
+      number
+    ) {
+      case 2:
+        console.log(
+          "sayı: 2 eşittir"
+        );
         break;
-        case 1:
-        console.log("sayı: 1 eşittir");
+      case 1:
+        console.log(
+          "sayı: 1 eşittir"
+        );
         break;
-        case 3:
-        console.log("sayı: 3 eşittir");
+      case 3:
+        console.log(
+          "sayı: 3 eşittir"
+        );
         break;
-        case 4:
-        console.log("sayı: 4 eşittir");
+      case 4:
+        console.log(
+          "sayı: 4 eşittir"
+        );
         break;
-        case 5:
-        console.log("sayı: 5 eşittir");
+      case 5:
+        console.log(
+          "sayı: 5 eşittir"
+        );
         break;
 
-    default:
-        console.log("Sayı 5'ten farklıdır");
+      default:
+        console.log(
+          "Sayı 5'ten farklıdır"
+        );
         break;
-}
+    }
   };
 //conditional4();
 
-
 // For Loop
-let loop1 =() => {
-    for (let i = 0; i < 10; i++) {
-        console.log(i);
-    }
-    // for(;;){} => Sonsuz Döngü
-  };
-  //loop1 () 
-
-  // While Loop
-let loop2 =() => {
+let loop1 = () => {
+  for (
     let i = 0;
-    while ( i < 10) {
-        console.log(i);
-        //i++
-        //i=i+1
-        i+=1
-    }
-    // While(true){}
-  };
-  //loop2 () 
+    i < 10;
+    i++
+  ) {
+    console.log(i);
+  }
+  // for(;;){} => Sonsuz Döngü
+};
+//loop1 ()
 
-    // While Loop
-let loop3 =() => {
-    let i = 0;
-    do{
-        console.log(i);
-        //i++
-        //i=i+1
-        i+=1 
-    }
-    while ( i < 10);
-    // While(true){}
-  };
- //loop3 () 
+// While Loop
+let loop2 = () => {
+  let i = 0;
+  while (i < 10) {
+    console.log(i);
+    //i++
+    //i=i+1
+    i += 1;
+  }
+  // While(true){}
+};
+//loop2 ()
 
-  /////////////////////////////////////
+// While Loop
+let loop3 = () => {
+  let i = 0;
+  do {
+    console.log(i);
+    //i++
+    //i=i+1
+    i += 1;
+  } while (i < 10);
+  // While(true){}
+};
+//loop3 ()
+
+/////////////////////////////////////
 //  Exception Handling
 let exceptionHandling =
-() => {
+  () => {
     try {
-        alerx("Pop-up")
-        
+      alerx(
+        "Pop-up"
+      );
     } catch (err) {
-        console.error(err);
-        console.error(err.message);
-    } finally{
-        console.log("port.close");
+      console.error(
+        err
+      );
+      console.error(
+        err.message
+      );
+    } finally {
+      console.log(
+        "port.close"
+      );
     }
-    console.log("son satır mutlaka görünsün");
+    console.log(
+      "son satır mutlaka görünsün"
+    );
     // throw new Error("Hata44");
-};
+  };
 //exceptionHandling();
 
 //////////////////////////////////////////
 //  setTimeOut Function
 let setTimeOutFunction =
-() => {
-setTimeout(()=>{
-console.log("Çalışsın Set Time Out");
-},3000)
-}
-setTimeOutFunction()
+  () => {
+    setTimeout(
+      () => {
+        console.log(
+          "Çalışsın Set Time Out"
+        );
+      },
+      3000
+    );
+  };
+//setTimeOutFunction();
 
 //  setTimeOut Function
 let setIntervalFunction =
-() => {
-setInterval(()=>{
-console.log("Sürekli Çalışsın setInterval ");
-},1000)
+  () => {
+    setInterval(
+      () => {
+        console.log(
+          "Sürekli Çalışsın setInterval "
+        );
+      },
+      1000
+    );
+  };
+//setIntervalFunction();
+
+//////////////////////////////
+// Asenkron
+// 1- Callback Function
+const callBackFunction =
+  () => {
+    // 1. ALAN
+    let hesapla = ( x, y, callback ) => {
+      let result =
+        x + y;
+      callback( result );
+    };
+
+    // 2.ALAN
+    let goster = ( data ) => { 
+      console.log( "Sonuç: " + data);
+    };
+
+    hesapla( 5, 3, goster)
+  };
+//callBackFunction();
+
+// Asenkron
+// 2- Promise Function
+
+const promiseFunction = () => {
+  const myPromise= new Promise((resolve,reject)=>{
+    let number=5;  //Math.floor(Math.random()*10);
+    if(number%2==0){
+      resolve(number);
+      console.log("Çift Sayı");
+    }else{
+      reject(number);
+      console.log("Tek Sayı");
+    }
+  }).then(()=>{
+    console.log("Then Çalıştı");
+  }).catch((err)=>{
+    console.log("Catch Çalıştı");
+    console.error(err.message);
+  });
 }
- setIntervalFunction();
+  //promiseFunction();
+
+// 3. Asenkron (Asyn-Await)
+  const asynAwaitFunction = () => {
+async function myFunction(){
+  try {
+     let response=await fetch('');
+  let result=response.json();
+  } catch (error) {
+    console.log(error.message);
+  }
+ 
+}
+  }
+  promiseFunction();
