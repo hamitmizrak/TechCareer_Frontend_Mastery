@@ -861,3 +861,36 @@ const instanceOfFunction=()=>{
     console.log(karabas instanceof Array);
 }
 //instanceOfFunction();
+
+//////////////////////////////////// 
+// LocalStorage
+const localStorageFunction=()=>{
+localStorage.setItem("unique_name","Harun");
+const username=localStorage.getItem("unique_name");
+console.log(username);
+//localStorageFunctionlocalStorage.removeItem("unique_name");
+//localStorage.clear();
+}
+//localStorageFunction();
+
+const greet=()=>{
+alert("Event Çalıştı")
+}
+
+/////////////////////////////////////
+// Event
+const parag_change=()=>{
+  //alert("Event Çalıştı")
+  let parag=document.getElementById("parag_id");
+  //parag.innerHTML="<b><mark>İnner Html Değiştirdi</mark></b>";
+  parag.innerText="<b><mark>İnner Html Değiştirdi</mark></b>";
+  parag.style.color="white";
+  parag.style.backgroundColor="black";
+  parag.style.margin="1rem";
+  parag.style.padding="1rem";
+}
+
+// AddEventListener
+parag_id.addEventListener("click",()=>{
+  alert("Kopyalama");
+});
