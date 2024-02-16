@@ -810,4 +810,54 @@ const classExample=()=>{
   personData1.greet();
 }
 
-classExample()
+//classExample()
+
+
+///////////////////////////////////////////
+// OBJECT
+const objectExample=()=>{
+  let city={
+"name":'Malatya',
+"age":44,
+"town":["Battalgazi","Yeşilyurt","Darende","Akçadağ"],
+getInfo:function(){
+  return `Şehir Adı: ${this.name} Yaş: ${this.age} İlçeler: ${this.town}`
+}
+  }; //end city 
+
+  console.log(city);
+  console.log(city.name);
+  console.log(typeof city.name);
+  console.log(city.age);
+  console.log(city.town);
+  console.log(city.town[0]);
+ const data= city.getInfo();
+ console.log(data);
+
+};
+
+objectExample();
+
+
+//////////////////////////////////// 
+const instanceOfFunction=()=>{
+
+  // HAYVAN
+  function Hayvan(tur){
+    this.tur=tur;
+  }
+
+    // KOPEK
+    function Kopek(cins){
+      this.cins=cins;
+    }
+
+    Kopek.prototype= new Hayvan();
+    let karabas=new Kopek("Karabaş Kangal");
+
+    console.log(karabas instanceof Kopek);
+    console.log(karabas instanceof Hayvan);
+    console.log(karabas instanceof Object);
+    console.log(karabas instanceof Array);
+}
+instanceOfFunction();
