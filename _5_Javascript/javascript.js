@@ -780,10 +780,34 @@ let diziFunction =
     //dizi2.splice( 0, 3 );
     //dizi2.splice( 0, 3,"Ankara" );
     //dizi2.splice( 0, 0,"Ankara" );
-    //dizi2.forEach( ( value, index, array ) => {
+    dizi2.forEach( ( value, index, array ) => {
         console.log( `${value}` );
       }
     );
   };
 
-diziFunction();
+//diziFunction();
+
+///////////////////////////////////////////
+// CLASS
+const classExample=()=>{
+
+  class Person {
+
+    // constructor 
+    constructor( name, age ) {
+      this.name = name;
+      this.age = age;
+    }
+
+    // Function
+    greet(){
+      console.log( `Merhaba ${this.name} yaşım ${this.age}` );
+    }
+  } //end class
+
+  let personData1=new Person("isim-1",6);
+  personData1.greet();
+}
+
+classExample()
