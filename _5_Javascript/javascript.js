@@ -836,7 +836,7 @@ getInfo:function(){
 
 };
 
-objectExample();
+//objectExample();
 
 
 //////////////////////////////////// 
@@ -860,4 +860,4 @@ const instanceOfFunction=()=>{
     console.log(karabas instanceof Object);
     console.log(karabas instanceof Array);
 }
-instanceOfFunction();
+//instanceOfFunction();
