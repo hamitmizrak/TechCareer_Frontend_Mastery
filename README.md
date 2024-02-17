@@ -54,12 +54,19 @@ package.json
 
 ---
 
+## Node JS
+```sh
+HelloWorld.js => node ./1_HelloWorld.js
+HelloWorld.js => node ./1_HelloWorld
+
+```
+
+---
+
 ## jQuery (JS Libraries)
 
 ---
 
-## Node JS
 
----
 
 ## React JS
