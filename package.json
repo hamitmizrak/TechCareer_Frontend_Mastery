@@ -4,6 +4,7 @@
   "description": "[GitHub](https://github.com/hamitmizrak/TechCareer_Frontend_Mastery)\r [Font Awesome](https://cdnjs.com/libraries/font-awesome)",
   "main": "index.js",
   "scripts": {
+    "node_hello": "node _6_NodeJs/_1_HelloWorld",
     "tailwind": "npx tailwindcss -i ./_4_TailwindCss/input.css -o ./_4_TailwindCss/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

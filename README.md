@@ -54,6 +54,32 @@ package.json
 
 ---
 
+## NPM
+```sh
+npm init 
+npm init -y
+npm search express 
+
+npm install 
+npm install express --save 
+npm show express
+npm update 
+npm update express
+npm uninstall express  
+npm uninstall express --save 
+npm install mocha --save-dev
+npm start
+npm run tailwind
+
+npm list
+npm list -g
+npm list -g --depth=0 (Sadece ana modülleri göstersin)
+npm root -g
+npm outdated (Güncellenmiş paketleri kontrol eder ve mevcut sürümleri karşılaştırır.)
+
+
+```
+
 ## Node JS
 ```sh
 HelloWorld.js => node ./1_HelloWorld.js
