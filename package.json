@@ -4,6 +4,8 @@
   "description": "[GitHub](https://github.com/hamitmizrak/TechCareer_Frontend_Mastery)\r [Font Awesome](https://cdnjs.com/libraries/font-awesome)",
   "main": "index.js",
   "scripts": {
+    "nodemon_q": "nodemon -q _6_NodeJs/nodejs.js",
+    "nodemon": "nodemon _6_NodeJs/nodejs.js",
     "node_hello": "node _6_NodeJs/_1_HelloWorld",
     "tailwind": "npx tailwindcss -i ./_4_TailwindCss/input.css -o ./_4_TailwindCss/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +24,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.3"
   }
 }

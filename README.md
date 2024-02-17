@@ -85,6 +85,9 @@ npm outdated (Güncellenmiş paketleri kontrol eder ve mevcut sürümleri karş�
 HelloWorld.js => node ./1_HelloWorld.js
 HelloWorld.js => node ./1_HelloWorld
 
+npm install -g nodemon 
+npm install  nodemon --save
+
 ```
 
 ---
