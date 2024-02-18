@@ -3,5 +3,14 @@ const HeaderFunction=()=>{
     console.log("Header");
 }
 
+// Function Navigation
+const NavigationFunction=()=>{
+    console.log("Navigation");
+}
+
 // Dış dünyaya açmak
-module.exports=HeaderFunction;
+// NOT: 1 tane function olursa
+// module.exports=HeaderFunction;
+
+module.exports.header=HeaderFunction;
+module.exports.navigation=NavigationFunction;
