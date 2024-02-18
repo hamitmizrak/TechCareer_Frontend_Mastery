@@ -1,3 +1,4 @@
+// Server Object
 const serverDataObject={
     host:'localhost',
     port:1111,
@@ -11,11 +12,17 @@ const serverDataObject={
     }
 };
 
+// HTml Object 
+const htmlDosyaYolu="./deneme.html"
+
 // Http Modül 
 const http=require('http');
 
+// File System
+const fs=require('fs');
+
 // Server Oluşturmak 
-const server=http.createServer(function(request,response){
+const server=http.createServer((request,response)=>{
     console.log('Server Oluşturuldu');
 
     // HEADER 
@@ -26,8 +33,8 @@ const server=http.createServer(function(request,response){
     // response.writeHead(200,{"Content-Type":"text/application/json; charset=utf-8"});
     // response.writeHead(serverDataObject.statusCode.success, {"Content-Type":"text/application/json; charset=utf-8"});
     // response.writeHead(serverDataObject.statusCode.success, {"Content-Type":"text/plain; charset=utf-8"});
-     response.writeHead(serverDataObject.statusCode.success, {"Content-Type":"text/html; charset=utf-8"});
-    response.write("Header Alanı<br/>");
+    response.writeHead(serverDataObject.statusCode.success, {"Content-Type":"text/html; charset=utf-8"});
+    //response.write("Header Alanı<br/>");
 
     // REQUEST
     console.log("******* REQUEST *******");
@@ -36,16 +43,31 @@ const server=http.createServer(function(request,response){
     console.log(request.headers);
     console.log(request.headers.age);
     console.log(request.headers.host);
-    response.write("Request Alanı<br/>");
+    //response.write("Request Alanı<br/>");
+
+
+     // HTML Sayfasını okumak
+     fs.readFile(htmlDosyaYolu,(err,data)=>{
+        if(err){
+            console.log("Html sayfası okunamadı Hata Oluştu");
+            console.error(err);
+            throw err;
+            //return;
+        }else{
+            response.end(data);
+        }
+     }); //end readfile
 
      // RESPONSE
-     console.log("******* RESPONSE *******");
-     console.log(response);
-     response.write("Response Alanı<br/>");
-
-
+     // console.log("******* RESPONSE *******");
+     // console.log(response);
+     // Html Object
+     // response.write(html);
      // END
-     response.end(`üğişçö Hoşgeldiniz Node JS Sunucusuna\n http://${serverDataObject.host}:${serverDataObject.port} Bu porta yayın yapılıyor<br/>`);
+     // response.end(`üğişçö Hoşgeldiniz Node JS Sunucusuna\n http://${serverDataObject.host}:${serverDataObject.port} Bu porta yayın yapılıyor<br/>`);
+     
+     // Eğer Html Documnet yapacaksanız böyle bırakmanız yerinde olur.
+     //response.end();
 }); //end Server
 
 // Listening Port
