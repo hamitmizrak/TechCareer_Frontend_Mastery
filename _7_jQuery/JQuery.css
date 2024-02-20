@@ -3,7 +3,7 @@
     height: 100px;
     background-color: red;
     margin: 10px;
-    float: left;
+    /* float: left; */
     text-align: center;
     line-height: 100px;
     font-size: 20px;
@@ -12,4 +12,9 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: all 0.5s;
+}
+
+#effect_id{
+    position:absolute;
+    top:0;
 }
