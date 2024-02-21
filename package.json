@@ -8,7 +8,8 @@
     "nodemon": "nodemon _6_NodeJs/nodejs.js",
     "node_hello": "node _6_NodeJs/_1_HelloWorld",
     "tailwind": "npx tailwindcss -i ./_4_TailwindCss/input.css -o ./_4_TailwindCss/output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fake-server": "json-server --watch --port 1111 _9_All_Project/restFakeApi.json"
   },
   "keywords": [
     "Html5",
@@ -26,6 +27,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "json-server": "^1.0.0-alpha.23",
     "nodemon": "^3.0.3"
   }
 }

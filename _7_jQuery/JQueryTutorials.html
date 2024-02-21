@@ -44,47 +44,29 @@
 
     <!-- jQuery -->
     <!-- https://cdnjs.com/libraries/jquery -->
+
+    <!-- <script src="//code.jquery.com/jquery-1.12.4.js"></script> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+   
+    <!-- Dikkat: jquery sonra jquery-ui yazıyoruz. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body class="container">
     <!-- Start Code -->
 
-    <form id="login_form" action="" method="post">
-        <label for="uemail">Email</label>
-        <input type="text" id="uemail" name="uemail"> <br/>
-
-        <label for="upassword">Password</label>
-        <input type="text" id="upassword" name="upassword"> <br/>
-
-        <button id="submit_id" type="submit">Gönder</button>
-    </form>
-
+   
+    <div class="box" id="effect_div">EFFECT</div>
     <script>
-        $(document).ready(function(){
-
-            alert("1.YOL")
-            $("#login_form").submit(function(event){
-                event.preventDefault();
-
-                // Form Verileri Al
-                let allFormData=$(this).serialize();
-
-                // Form Verileri 
-                alert(allFormData)
-                console.log(allFormData);
-            })
-            alert("2.yol")
-            $("#submit_id").click(function(){
-                const email = $.trim($("#uemail").val()) ;
-                let password = jQuery.trim($('#upassword').val()) ;
-                alert("Email: " + email + " Password: " + password);
-                console.log(`Email: ${email}\n Password: ${password} `);
-            });
+        $("#effect_div" ).click(function() {
+          $("#effect_div" ).effect("bounce", "slow");
         });
     </script>
+
+<br><br><br><br><br>
+
+   
 
     <hr>
     <button id="mouse_id">Mouse</button>

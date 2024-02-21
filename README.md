@@ -99,3 +99,26 @@ npm install  nodemon --save
 
 
 ## React JS
+
+---
+
+## All Project
+```sh
+npm install -g json-server 
+npm install  json-server --save
+
+restFakeApi.json
+{
+   "blog":[
+    {
+        "id":"1",
+        "title":"Blog-1",
+        "content":"Content-1",
+        "created_date":"1/01/2025"
+    }
+   ] 
+}
+```
+
+
+---
