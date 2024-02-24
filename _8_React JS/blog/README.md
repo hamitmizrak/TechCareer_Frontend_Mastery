@@ -5,6 +5,10 @@ npx create-react-app blog
 cd blog 
 npm start 
 
+--- 
+https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
+
+https://chromewebstore.google.com/detail/react-context-devtool/oddhnidmicpefilikhgeagedibnefkcf
 
 ---
 # Getting Started with Create React App
