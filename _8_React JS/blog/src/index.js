@@ -1,15 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// Router
+import { BrowserRouter } from "react-router-dom";
+
+import "./index.css";
 // import App from './App';
 // import ClassCompontentsTutorials from './compontents/ClassCompontentsTutorials';
-import reportWebVitals from './reportWebVitals';
-import FunctionCompontentsTutorials from './compontents/FunctionCompontentsTutorials';
+import reportWebVitals from "./reportWebVitals";
+//import FunctionCompontentsTutorials from './compontents/FunctionCompontentsTutorials';
+import RouterBlog from "./RouterBlog";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root =
+  ReactDOM.createRoot(
+    document.getElementById(
+      "root"
+    )
+  );
 root.render(
   <React.StrictMode>
-    <FunctionCompontentsTutorials/>
+    <BrowserRouter>
+      <RouterBlog />
+    </BrowserRouter>
+    {/* <FunctionCompontentsTutorials/> */}
     {/* <ClassCompontentsTutorials /> */}
     {/* <App /> */}
   </React.StrictMode>
